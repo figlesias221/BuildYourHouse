@@ -1,0 +1,57 @@
+{
+  "collection": {
+    "title": "Tu Colección",
+    "filter": "Filtro",
+    "filterPlaceholder": "Filtrar por categoría...",
+    "specials": "Especiales",
+    "museum": "Museo",
+    "stadiums": "Estadios y Pelota"
+  },
+  "swipe": {
+    "title": "Swipe",
+    "empty": "No hay nada que mostrar"
+  },
+  "settings": {
+    "title": "Perfil",
+    "logout": "Cerrar sesión",
+    "edit": "Editar"
+  },
+  "chat": {
+    "title": "Mensajes",
+    "no-messages": "No hay mensajes",
+    "placeHolder": "Escribe un mensaje",
+    "no-chats": "No tienes conversaciones."
+  },
+  "signin": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Ingresar",
+    "passwordPlaceholder": "Contraseña",
+    "emailPlaceholder": "Correo electrónico",
+    "dontHaveAccount": "¿No tienes una cuenta?",
+    "signup": "Crear cuenta",
+    "stickerwap": "StickerWap"
+  },
+  "signup": {
+    "title": "Regístrate",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "submit": "Regístrate",
+    "passwordPlaceholder": "Contraseña",
+    "emailPlaceholder": "Correo electrónico",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signin": "Iniciar sesión",
+    "name": "Nombre de usuario",
+    "namePlaceholder": "Nombre de usuario",
+    "region": "Región",
+    "regionPlaceholder": "Región"
+  },
+  "collection-alert": {
+    "title": "Agrear/Eliminar Figurita: ",
+    "subtitle": "Actualmente, tienes ",
+    "add": "Agregar una",
+    "remove": "Eliminar una",
+    "ok": "OK"
+  }
+}

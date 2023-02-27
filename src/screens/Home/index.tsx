@@ -1,6 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
+
 import {Arrow, Minus, Plus} from '../../assets';
 import i18n from '../../translations';
 import {ADD_ITEM} from '../../utils/route';

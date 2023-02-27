@@ -1,13 +1,14 @@
 import {StyleSheet} from 'react-native';
-import {gray, secondary} from '../styles/theme';
+
+import {secondary} from '../styles/theme';
 
 const styles = StyleSheet.create({
   title: {
     fontSize: 20,
-    fontWeight: 700,
+    fontWeight: '700',
     textAlign: 'left',
-    margin: 20,
     color: secondary,
+    margin: 20,
   },
   wrapper: {
     marginBottom: 80,

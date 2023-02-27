@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import {Dropdown} from 'react-native-element-dropdown';
 
 import {gray} from '../../styles/theme';
 import i18n from '../../translations';
+import styles from './styles';
 
 const data = [
   {label: i18n.t('home.exitAndSave'), value: '1'},
@@ -12,7 +13,7 @@ const data = [
 ];
 
 const DropdownComponent = () => {
-  const [value, setValue] = useState(null);
+  const [value] = useState(null);
   const [isFocus, setIsFocus] = useState(false);
 
   return (
@@ -36,8 +37,7 @@ const DropdownComponent = () => {
         value={value}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
-        onChange={(item): any => {
-          setValue(item.value);
+        onChange={() => {
           setIsFocus(false);
         }}
       />
@@ -46,36 +46,3 @@ const DropdownComponent = () => {
 };
 
 export default DropdownComponent;
-
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: 'white',
-    marginRight: 10,
-    marginBottom: 10,
-    width: 150,
-    borderRadius: 5,
-  },
-  dropdown: {
-    height: 30,
-    paddingHorizontal: 10,
-    borderRadius: 5,
-  },
-  icon: {
-    marginRight: 5,
-  },
-  placeholderStyle: {
-    fontSize: 12,
-  },
-  selectedTextStyle: {
-    fontSize: 11,
-    color: gray,
-  },
-  iconStyle: {
-    width: 20,
-    height: 20,
-  },
-  inputSearchStyle: {
-    height: 40,
-    fontSize: 12,
-  },
-});

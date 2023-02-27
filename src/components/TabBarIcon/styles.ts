@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-import {gray, primary} from '../../styles/theme';
+import {gray} from '../../styles/theme';
 
 const styles = StyleSheet.create({
   container: {

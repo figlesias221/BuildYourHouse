@@ -2,12 +2,12 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import authScreens from '../../navigation/screens/authScreens';
-import {COLLECTION} from '../../utils/route';
+import {HOME} from '../../utils/route';
 
 const Stack = createStackNavigator();
 
 const OpeningsStack = () => (
-  <Stack.Navigator initialRouteName={COLLECTION}>
+  <Stack.Navigator initialRouteName={HOME}>
     {authScreens.map(({name, component: Component, options}: any) => (
       <Stack.Screen
         name={name}

@@ -1,5 +1,5 @@
 import Home from '../../screens/Home';
-import {CHAT, COLLECTION, SETTINGS, SWIPE} from '../../utils/route';
+import {HOME} from '../../utils/route';
 
 interface IScreens {
   name: string;
@@ -9,15 +9,18 @@ interface IScreens {
 
 const authScreens: IScreens[] = [
   {
-    name: COLLECTION,
+    name: 'dd',
+    component: Home,
+    options: {
+      headerShown: false,
+    },
+  },
+  {
+    name: 'HOME',
     component: Home,
   },
   {
-    name: SWIPE,
-    component: Home,
-  },
-  {
-    name: SETTINGS,
+    name: 'ss',
     component: Home,
   },
 ];

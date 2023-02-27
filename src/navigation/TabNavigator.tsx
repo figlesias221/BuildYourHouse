@@ -6,14 +6,14 @@ import {
 
 import TabBar from '../components/TabBar';
 import tabScreens from '../navigation/tabScreens';
-import {COLLECTION} from '../utils/route';
+import {HOME} from '../utils/route';
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName={COLLECTION}
+      //initialRouteName={HOME}
       sceneContainerStyle={{backgroundColor: 'transparent'}}
       tabBar={(props: BottomTabBarProps) => <TabBar {...props} />}
       screenOptions={{headerShown: false}}>
@@ -22,7 +22,7 @@ const TabNavigator = () => {
           component={component}
           key={name}
           name={name}
-          options={options}
+          options={{headerShown: false}}
         />
       ))}
     </Tab.Navigator>

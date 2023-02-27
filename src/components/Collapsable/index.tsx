@@ -1,16 +1,15 @@
-import React, {Component, useState} from 'react';
-
+import React, {useState} from 'react';
 import {
   Image,
   LayoutAnimation,
   ScrollView,
-  StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
+
 import {DropdownArrow} from '../../assets';
-import {gray, white} from '../../styles/theme';
+import styles from './styles';
 
 const Collapsable = ({title, items}: any) => {
   const [open, setOpen] = useState(false);
@@ -40,7 +39,7 @@ const Collapsable = ({title, items}: any) => {
             {items.map((item: any, index: number) => (
               <View style={styles.itemWrapper} key={index}>
                 <Image
-                  style={{width: 70, height: 70, alignSelf: 'center'}}
+                  style={styles.image}
                   source={{
                     uri: item.img,
                   }}
@@ -58,41 +57,3 @@ const Collapsable = ({title, items}: any) => {
 };
 
 export default Collapsable;
-
-const styles = StyleSheet.create({
-  wrapper: {
-    width: '100%',
-    marginTop: 20,
-  },
-  headerContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  item: {
-    width: '90%',
-    overflow: 'hidden',
-    padding: 10,
-    marginLeft: 10,
-    borderRadius: 5,
-    backgroundColor: white,
-    marginBottom: 20,
-  },
-  itemWrapper: {
-    width: '100%',
-    overflow: 'hidden',
-    padding: 10,
-  },
-  title: {
-    color: gray,
-  },
-  description: {
-    color: gray,
-    alignSelf: 'center',
-  },
-  icon: {
-    width: 20,
-    height: 20,
-    alignSelf: 'flex-end',
-    transform: [{rotateZ: '90deg'}],
-  },
-});

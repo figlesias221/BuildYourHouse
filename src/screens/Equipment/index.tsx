@@ -1,5 +1,6 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {View, Text, ScrollView} from 'react-native';
+
 import Collapsable from '../../components/Collapsable';
 import i18n from '../../translations';
 import styles from '../styles';

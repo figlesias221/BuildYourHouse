@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {Dropdown} from 'react-native-element-dropdown';
 
+import {gray} from '../../styles/theme';
+import i18n from '../../translations';
+
 const data = [
-  {label: 'Guardar y Salir', value: '1'},
-  {label: 'Salir sin guardar', value: '2'},
-  {label: 'Guardar y contiunar', value: '3'},
+  {label: i18n.t('home.exitAndSave'), value: '1'},
+  {label: i18n.t('home.exitNoSave'), value: '2'},
+  {label: i18n.t('home.exitAndContinue'), value: '3'},
 ];
 
 const DropdownComponent = () => {
@@ -20,7 +23,8 @@ const DropdownComponent = () => {
         selectedTextStyle={styles.selectedTextStyle}
         inputSearchStyle={styles.inputSearchStyle}
         itemTextStyle={{
-          fontSize: 10,
+          fontSize: 12,
+          color: gray,
         }}
         iconStyle={styles.iconStyle}
         data={data}
@@ -32,7 +36,7 @@ const DropdownComponent = () => {
         value={value}
         onFocus={() => setIsFocus(true)}
         onBlur={() => setIsFocus(false)}
-        onChange={item => {
+        onChange={(item): any => {
           setValue(item.value);
           setIsFocus(false);
         }}
@@ -46,32 +50,25 @@ export default DropdownComponent;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    marginRight: 16,
+    marginRight: 10,
+    marginBottom: 10,
     width: 150,
+    borderRadius: 5,
   },
   dropdown: {
-    height: 20,
-    borderWidth: 0.5,
-    paddingHorizontal: 8,
+    height: 30,
+    paddingHorizontal: 10,
+    borderRadius: 5,
   },
   icon: {
     marginRight: 5,
-  },
-  label: {
-    position: 'absolute',
-    backgroundColor: 'white',
-    left: 22,
-    top: 8,
-    zIndex: 999,
-    paddingHorizontal: 8,
-
-    fontSize: 12,
   },
   placeholderStyle: {
     fontSize: 12,
   },
   selectedTextStyle: {
-    fontSize: 12,
+    fontSize: 11,
+    color: gray,
   },
   iconStyle: {
     width: 20,

@@ -1,16 +1,26 @@
 import {StyleSheet} from 'react-native';
-import {black, green, white} from '../../styles/theme';
+
+import {gray, primary, secondary, white} from '../../styles/theme';
 
 const styles = StyleSheet.create({
   buttonText: {
     fontSize: 14,
     textAlign: 'center',
     margin: 10,
-    color: '#555555',
+    color: gray,
+  },
+  row: {
+    flexDirection: 'row',
+  },
+  addItemWrapper: {
+    alignSelf: 'flex-start',
+    alignItems: 'center',
+    borderRadius: 5,
+    backgroundColor: secondary,
   },
   screenWrapper: {
     flex: 1,
-    backgroundColor: '#efefef',
+    backgroundColor: primary,
     justifyContent: 'space-between',
     padding: 20,
   },
@@ -30,7 +40,7 @@ const styles = StyleSheet.create({
     width: 30,
     height: 35,
     alignItems: 'center',
-    borderBottomColor: '#efefef',
+    borderBottomColor: primary,
     borderBottomWidth: 1,
   },
   minusButtonContainer: {
@@ -64,9 +74,8 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
   controlsContainer: {
-    alignItems: 'center',
-    alignSelf: 'flex-end',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     marginBottom: 40,
     marginRight: 15,
   },

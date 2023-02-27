@@ -5,6 +5,13 @@
     "delete": "Delete",
     "exitAndSave": "Save and Exit",
     "exitNoSave": "Exit without saving",
-    "exitAndContinue": "Exit and continue"
+    "exitAndContinue": "Exit and continue",
+    "title": "Home"
+  },
+  "items": {
+    "openings": "Openings",
+    "equipment": "Equipment",
+    "endings": "Endings",
+    "title": "AddItem"
   }
 }

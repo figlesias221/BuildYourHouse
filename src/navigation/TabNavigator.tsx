@@ -6,18 +6,15 @@ import {
 
 import TabBar from '../components/TabBar';
 import tabScreens from '../navigation/tabScreens';
-import {HOME} from '../utils/route';
 
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      //initialRouteName={HOME}
       sceneContainerStyle={{backgroundColor: 'transparent'}}
-      tabBar={(props: BottomTabBarProps) => <TabBar {...props} />}
-      screenOptions={{headerShown: false}}>
-      {tabScreens.map(({name, component, options}: any) => (
+      tabBar={(props: BottomTabBarProps) => <TabBar {...props} />}>
+      {tabScreens.map(({name, component}: any) => (
         <Tab.Screen
           component={component}
           key={name}

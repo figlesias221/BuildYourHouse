@@ -6,7 +6,9 @@
     "exitAndSave": "Save and Exit",
     "exitNoSave": "Exit without saving",
     "exitAndContinue": "Exit and continue",
-    "title": "Home"
+    "title": "Home",
+    "plus": "+",
+    "minus": "-"
   },
   "items": {
     "openings": "Openings",

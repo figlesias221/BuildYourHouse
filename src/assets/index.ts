@@ -5,3 +5,4 @@ export {default as Window} from './Aberturas.png';
 export {default as Equipment} from './Equipamiento.png';
 export {default as Endings} from './Terminaciones.png';
 export {default as Logo} from './logo.png';
+export {default as DropdownArrow} from './activo.png';

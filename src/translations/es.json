@@ -5,9 +5,10 @@
     "delete": "Borrar",
     "exitAndSave": "Guardar y Salir",
     "exitNoSave": "Salir sin guardar",
-
     "exitAndContinue": "Salir y continuar",
-    "title": "Inicio"
+    "title": "Inicio",
+    "plus": "+",
+    "minus": "-"
   },
   "items": {
     "openings": "Aberturas",

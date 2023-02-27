@@ -32,11 +32,15 @@ const Home = () => {
 
         <View style={styles.row}>
           <View style={styles.magnifierContainer}>
-            <TouchableOpacity style={styles.plusButtonContainer}>
+            <TouchableOpacity
+              style={styles.plusButtonContainer}
+              onPress={() => console.log(i18n.t('home.plus'))}>
               <Image style={{width: 20, height: 20}} source={Plus} />
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.minusButtonContainer}>
+            <TouchableOpacity
+              style={styles.minusButtonContainer}
+              onPress={() => console.log(i18n.t('home.minus'))}>
               <Image style={{width: 20, height: 20}} source={Minus} />
             </TouchableOpacity>
           </View>

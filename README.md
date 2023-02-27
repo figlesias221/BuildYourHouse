@@ -14,11 +14,6 @@ This is a simple project to build a house using ReactNative.
 
 ```bash
 git clone
-```
-
-###
-
-```bash
 npm install
 ```
 

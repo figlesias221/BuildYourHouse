@@ -8,15 +8,17 @@ const styles = StyleSheet.create({
   },
   icon: {
     width: 30,
-    height: 20,
+    height: 30,
     marginLeft: 0,
   },
   textActive: {
-    color: primary,
+    color: '#58DBDB',
     marginTop: 9,
+    fontSize: 12,
   },
   textInactive: {
     color: gray,
+    fontSize: 12,
     marginTop: 9,
   },
   activeIcon: {

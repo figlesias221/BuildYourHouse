@@ -2,8 +2,10 @@ import {ImageSourcePropType} from 'react-native';
 
 import i18n from '../translations';
 import OpeningsStack from '../navigation/stacks/OpeningsStack';
-import {Plus} from '../assets';
+import {Endings, Equipment, Window} from '../assets';
 import {HOME} from '../utils/route';
+import EquipmentStack from './stacks/EquipmentStack';
+import EndingsStack from './stacks/EndingsStack';
 
 interface IScreens {
   name: string;
@@ -24,28 +26,28 @@ const tabScreens: ITabScreens[] = [
     component: OpeningsStack,
     default: HOME,
     images: {
-      active: Plus,
+      active: Window,
     },
     name: HOME,
-    title: i18n.t('collection.title'),
+    title: i18n.t('items.openings'),
   },
   {
-    component: OpeningsStack,
+    component: EquipmentStack,
     default: HOME,
     images: {
-      active: Plus,
+      active: Equipment,
     },
     name: 's',
-    title: i18n.t('swipe.title'),
+    title: i18n.t('items.equipment'),
   },
   {
-    component: OpeningsStack,
+    component: EndingsStack,
     default: HOME,
     images: {
-      active: Plus,
+      active: Endings,
     },
     name: 'ddd',
-    title: i18n.t('chat.title'),
+    title: i18n.t('items.endings'),
   },
 ];
 

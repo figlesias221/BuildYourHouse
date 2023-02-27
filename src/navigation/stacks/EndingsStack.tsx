@@ -2,13 +2,13 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import {HOME} from '../../utils/route';
-import openingsScreens from '../screens/openingsScreens';
+import endingsScreens from '../screens/endingsScreens';
 
 const Stack = createStackNavigator();
 
-const OpeningsStack = () => (
+const EndingsStack = () => (
   <Stack.Navigator initialRouteName={HOME}>
-    {openingsScreens.map(({name, component: Component, options}: any) => (
+    {endingsScreens.map(({name, component: Component, options}: any) => (
       <Stack.Screen
         name={name}
         key={name}
@@ -21,4 +21,4 @@ const OpeningsStack = () => (
   </Stack.Navigator>
 );
 
-export default OpeningsStack;
+export default EndingsStack;

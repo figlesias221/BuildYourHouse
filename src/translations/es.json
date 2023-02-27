@@ -5,6 +5,14 @@
     "delete": "Borrar",
     "exitAndSave": "Guardar y Salir",
     "exitNoSave": "Salir sin guardar",
-    "exitAndContinue": "Salir y continuar"
+
+    "exitAndContinue": "Salir y continuar",
+    "title": "Inicio"
+  },
+  "items": {
+    "openings": "Aberturas",
+    "equipment": "Equipamiento",
+    "endings": "Terminaciones",
+    "title": "Agregar"
   }
 }

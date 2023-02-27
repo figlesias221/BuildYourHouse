@@ -8,7 +8,8 @@ import Home from '../screens/Home';
 import {Logo} from '../assets';
 import DropdownComponent from '../components/Dropdown';
 import {ADD_ITEM, HOME} from '../utils/route';
-import {secondary} from '../styles/theme';
+import {secondary, white} from '../styles/theme';
+import i18n from '../translations';
 
 const Stack = createStackNavigator();
 
@@ -33,6 +34,11 @@ const Navigation = () => {
       <Stack.Navigator
         screenOptions={{
           headerStyle: styles.header,
+          headerTitleStyle: {
+            color: white,
+          },
+          headerBackTitle: i18n.t('home.title') || 'Inicio',
+          headerTitle: i18n.t('items.title') || 'Agregar',
         }}
         initialRouteName={HOME}>
         <Stack.Screen
